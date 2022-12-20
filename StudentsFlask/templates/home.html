@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+	HOME
+{% endblock %}
+
+
+
+{% block body %}
+
+	<table class="table">
+		<tr>
+			<th>Name</th>
+			<th>Address</th>
+			<th>City</th>
+			<th>PINCODE</th>
+		</tr>
+		{% for row in rows %}
+		<tr>
+			<td>{{ row['name'] }}</td>
+			<td>{{ row['addr'] }}</td>
+			<td>{{ row['city'] }}</td>
+			<td>{{ row['pin'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+
+{% endblock %}

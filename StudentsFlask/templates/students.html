@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+	All Students
+{% endblock %}
+
+
+
+{% block body %}
+
+	<form action="{{ url_for('addrec') }}" method="POST">
+		
+		<h3>Students Information</h3>
+		<p>Name</p>
+		<p><input type="text" name="name" placeholder="Name"></p>
+		<p>Address</p>
+		<p><input type="text" name="addr" placeholder="Address"></p>
+		<p>City</p>
+		<p><input type="text" name="city"></p>
+		<p>PinCode</p>
+		<p><input type="text" name="pin"></p>
+		<p><input type="submit" name="" value="Submit"></p>
+
+	</form>
+
+{% endblock %}
